@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Love | Valentine's Proposal</title>
+</head>
+
+<body>
+  <div class="hearts-container" id="hearts-container"></div>
+
+  <div id="app">
+    <!-- Section 1: Entry & Security -->
+    <section id="auth-section" class="active">
+      <div class="auth-box">
+        <h1>Hello, Love</h1>
+        <p>A little something special, just for you. Enter the password to unlock.</p>
+        <div style="margin-top: 2rem;">
+          <input type="password" id="password-input" placeholder="Secret Password" autofocus autocomplete="off" />
+          <button id="unlock-btn" class="btn btn-primary">Unlock</button>
+          <div id="error-msg" class="error-msg"></div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Section 3: The Quiz Component Mount -->
+    <section id="quiz-section" class="hidden">
+      <!-- Logic will mount the QuizComponent here -->
+      <div id="quiz-mount"></div>
+    </section>
+
+    <!-- Section 4: The Proposal -->
+    <section id="proposal-section" class="hidden">
+      <h1>Will You Be My Valentine?</h1>
+      <p>You make every day brighter, and I want to spend many more making memories with you.</p>
+      <div style="margin-top: 3rem; display: flex; gap: 1.5rem; justify-content: center;">
+        <button id="yes-btn" class="btn btn-primary" style="padding: 1.2rem 4rem; font-size: 1.2rem;">YES!</button>
+        <button id="no-btn" class="btn" style="padding: 1.2rem 4rem; font-size: 1.2rem;">No</button>
+      </div>
+    </section>
+
+    <!-- Section 5: The Celebration -->
+    <section id="celebration-section" class="hidden">
+      <h1>YAAAY! ❤️</h1>
+      <p>I can't wait to see you!</p>
+      <img src="https://lh3.googleusercontent.com/d/1RaEnJCW2Id9PYgfR_s58oQUHyuBc4h3i" alt="Celebration"
+        style="border-radius: 8px; max-width: 100%; margin-top: 2rem;">
+    </section>
+  </div>
+
+  <!-- Using type="module" to handle the script -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
