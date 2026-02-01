@@ -19,6 +19,9 @@ dist-ssr
 encrypt_secrets.cjs
 encrypted_data.json
 encrypted_blob.json
+encrypted_blob_utf8.json
+fix_links.cjs
+update_main.cjs
 
 # Editor directories and files
 .vscode/*
